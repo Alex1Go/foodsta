@@ -154,7 +154,6 @@ body {
 
 .main-box {
     display: flex;
-    min-width: 100%;
     background-image: url(../img/ellipse4.png), url(../img/ellipse1.png), url(../img/ellipse2.png), url(../img/fon1.png);
     background-repeat: no-repeat;
     background-size: 252px, 500px, 550px, cover;
@@ -283,10 +282,6 @@ body {
 }
 
 /* ===== Customers ===== */
-/* .review {
-    padding-top: 100px;
-} */
-
 .review-title {
     font-size: 42px;
     line-height: 1.17;
@@ -303,53 +298,98 @@ body {
 
 .review .list {
     display: flex;
+    margin-left: 16px;
+
 }
 
 .review-item {
-    width: 501px;
+    max-width: 501px;
     background: #FEFEFE;
     border-radius: 0px 30px 30px 30px;
+    padding: 14px;
+    margin-right: 139px;
 }
 
 .review-box {
     padding-top: 100px;
+    padding-bottom: 200px;
     background-image: url(../img/fon2.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 647px;
+    /* height: 647px; */
 }
 
-.review-block {
+.review-svg {
+    fill: #FFE550;
+    margin-bottom: 28px;
+}
+
+.review-second-text {
     font-size: 18px;
     line-height: 1.16;
-    padding: 0 14px;
+    margin-bottom: 40px
+}
+
+.review-mini-box {
+    display: flex;
+    max-width: 160px;
+    border-right: 1px solid #7EB101;
 }
 
 .review-subtitle {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.5;
+    margin-left: 16px;
+    margin-bottom: 2px
 }
 
 .review-desc {
     font-size: 14px;
     line-height: 1.5;
+    margin-left: 16px;
 }
 
-.review-mini-box {
-    display: flex;
-}
+
+
 
 /* ===== Subscribe ===== */
-.fb-title {
+.subs-title {
     font-size: 42px;
     line-height: 1.2;
+    margin-bottom: 20px
 }
 
-.fb-text {
+.subs-text {
     font-size: 16px;
     line-height: 1.5;
+    margin-bottom: 24px
+}
+
+.subs-block {
+    display: flex;
+    align-items: center;
+}
+
+.subs-btn {
+    padding: 11px 22px;
+    border-radius: 30px;
+    border: none;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.5;
+    text-align: right;
+    cursor: pointer;
+    color: #2C2C2C;
+    background-color: #BBF330;
+}
+
+.subs-btn:hover,
+.subs-btn:focus {
+    background-color: #FFE450;
 }
 
 /* ===== Footer =====*/
