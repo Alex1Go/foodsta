@@ -24,7 +24,7 @@ img {
     list-style: none;
 }
 
-a {
+.link {
     text-decoration: none;
 }
 
@@ -32,8 +32,8 @@ a {
     width: 1300px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 body {
@@ -65,7 +65,6 @@ body {
     display: block;
     font-size: 14px;
     line-height: 16px;
-    color: #2C2C2C;
     padding-top: 28px;
     padding-bottom: 28px;
 }
@@ -92,7 +91,6 @@ body {
 }
 
 .main-nav .btn {
-    margin-right: 16px;
     margin-left: 30px;
 }
 
@@ -101,14 +99,8 @@ body {
     background-color: #FFE450;
 }
 
-.logo {
-    margin-left: 16px;
-}
 
 /* ===== Hero ===== */
-/* .hero {
-    padding-top: 14px;
-} */
 
 .hero-box {
     position: relative;
@@ -118,7 +110,6 @@ body {
 }
 
 .second-hero-box {
-    margin-left: 16px;
     max-width: 503px;
 }
 
@@ -148,9 +139,6 @@ body {
 
 
 /* ===== Offerings ===== */
-/* .main {
-    padding-bottom: 100px;
-} */
 
 .main-box {
     display: flex;
@@ -163,12 +151,12 @@ body {
 
 .apple {
     margin-top: 180px;
-    margin-left: 100px;
+    margin-left: 84px;
 }
 
 .second-main-box {
     margin-top: 260px;
-    margin-right: 51px;
+    margin-right: 35px;
     margin-left: auto;
     max-width: 573px;
 }
@@ -187,12 +175,14 @@ body {
     font-size: 42px;
     line-height: 1.2;
     margin-bottom: 20px;
+
 }
 
 .main-text {
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 40px;
+    margin-right: 62px;
 }
 
 .main-subtile {
@@ -261,14 +251,15 @@ body {
     margin-bottom: 40px;
 }
 
-.menu-box {
+.menu-box-first {
     display: flex;
-    gap: 32px;
-    padding: 0 16px;
+    justify-content: space-between;
+    margin-bottom: 32px;
 }
 
-.first {
-    padding-bottom: 32px;
+.menu-box-second {
+    display: flex;
+    justify-content: space-between;
 }
 
 .menu-img {
@@ -298,7 +289,6 @@ body {
 
 .review .list {
     display: flex;
-    margin-left: 16px;
 
 }
 
@@ -312,12 +302,11 @@ body {
 
 .review-box {
     padding-top: 100px;
-    padding-bottom: 200px;
+    padding-bottom: 210px;
     background-image: url(../img/fon2.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    /* height: 647px; */
 }
 
 .review-svg {
@@ -352,9 +341,11 @@ body {
 }
 
 
-
-
 /* ===== Subscribe ===== */
+.subs {
+    padding-bottom: 64px;
+}
+
 .subs-title {
     font-size: 42px;
     line-height: 1.2;
@@ -393,14 +384,117 @@ body {
 }
 
 /* ===== Footer =====*/
-.ftr-link {
+.ftr {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url(../img/fon3.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
+}
+
+.ftr-nav {
+    display: flex;
+    margin-bottom: 80px;
+    align-items: center;
+
+}
+
+.ftr-logo {
+    margin-right: 148px;
+}
+
+.ftr-nav .list {
+    display: flex;
+}
+
+.ftr-item:not(:last-child) {
+    margin-right: 28px;
+}
+
+.ftr-nav .link {
+    font-size: 14px;
+    line-height: 1.14;
+}
+
+.ftr-nav .link:hover,
+.ftr-nav .link:focus {
+    color: #BBF330;
+}
+
+.ftr-form {
+    margin-left: auto;
+}
+
+.ftr-mail-title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    margin-bottom: 12px;
+}
+
+.ftr-input {
+    background: #FEFEFE;
+    border: 0.854167px solid #FFE550;
+    border-radius: 30px;
+    padding: 12px 12px;
+    margin-bottom: 12px;
+}
+
+.ftr-input::placeholder {
+    font-size: 12px;
+    line-height: 150%;
+    color: #505050;
+
+}
+
+.ftr-mail-btn {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 150%;
+    color: #2C2C2C;
+    padding: 11px 22px;
+    background: #FFFFFF;
+    border: 0.854167px solid #7EB101;
+    border-radius: 30px;
+    margin-left: 13px;
+    cursor: pointer;
+}
+
+.ftr-mail-btn:hover,
+.ftr-mail-btn:focus {
+    border: 2px solid #FFE450;
+}
+
+.ftr-link,
+.ftr-mail-link {
     font-size: 12px;
     line-height: 1.16;
     text-decoration-line: underline;
     color: #7EB101;
 }
 
-.ftr-text {
+.ftr-text,
+.ftr-mail-text {
     font-size: 12px;
     line-height: 1.16;
+}
+
+.ftr-text {
+    margin-left: auto;
+}
+
+.ftr-end {
+    display: flex;
+    align-items: center;
+}
+
+.ftr-end .list {
+    display: flex;
+}
+
+.ftr-end-item:not(:last-child) {
+    margin-right: 20px;
 }
