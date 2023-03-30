@@ -141,6 +141,35 @@ body {
 
 }
 
+.slick-prev::before {
+    content: '\276E';
+    color: #2C2C2C;
+    font-size: 35px;
+}
+
+.slick-prev {
+    left: -15px;
+    z-index: 2;
+
+}
+
+.slick-next::before {
+    content: '\276F';
+    color: #2C2C2C;
+    font-size: 35px;
+    line-height: 1;
+}
+
+.slick-next {
+    right: -15px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    width: 48px;
+    height: 40px;
+}
+
+.slick-arrow {}
 
 /* ===== Offerings ===== */
 
