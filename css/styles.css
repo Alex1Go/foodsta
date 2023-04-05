@@ -67,6 +67,7 @@ body {
     line-height: 16px;
     padding-top: 28px;
     padding-bottom: 28px;
+    color: #2c2c2c;
 }
 
 .link:hover,
@@ -141,35 +142,60 @@ body {
 
 }
 
-.slick-prev::before {
-    content: '\276E';
-    color: #2C2C2C;
-    font-size: 35px;
+.slick-arrow {
+    z-index: 5;
+    width: 48px;
+    height: 40px;
+    background-color: #fff;
+    font-size: 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
 }
 
-.slick-prev {
-    left: -15px;
-    z-index: 2;
+.slick-arrow:before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    transform: rotate(45deg);
+    top: 10px;
+}
 
+.slick-prev::before {
+    border-left: solid 3px #2c2c2c;
+    border-bottom: solid 3px #2c2c2c;
+    left: 18px;
 }
 
 .slick-next::before {
-    content: '\276F';
-    color: #2C2C2C;
-    font-size: 35px;
-    line-height: 1;
+    border-right: solid 3px #2c2c2c;
+    border-top: solid 3px #2c2c2c;
+    right: 18px;
+}
+
+.slick-prev {
+    left: -14px;
 }
 
 .slick-next {
-    right: -15px;
-    background: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
-    border-radius: 8px;
-    width: 48px;
-    height: 40px;
+    right: -14px;
+
 }
 
-.slick-arrow {}
+.slick-arrow:hover:before,
+.slick-arrow:focus:before {
+    border-color: #7EB101;
+}
+
+.slick-arrow:hover,
+.slick-arrow:focus {
+    background: #FFFFFF;
+}
+
+.slick-arrow:active {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+}
 
 /* ===== Offerings ===== */
 
